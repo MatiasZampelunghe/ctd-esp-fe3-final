@@ -24,8 +24,8 @@ const Home = () => {
         <div className='home' style={{background:Theme.backgroundHome, color:Theme.color}}>
             <h1>Home</h1>
             <div className='card-grid'>
-                {Odontologos.map(item => {
-                    return <Card key={item.id} id={item.id} name={item.name} username={item.username} />
+                {Odontologos.map(data => {
+                    return <Card key={data.id} id={data.id} name={data.name} username={data.username} />
                 })}
             </div>
         </div>
